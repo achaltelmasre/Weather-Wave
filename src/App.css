@@ -1,21 +1,25 @@
 .card{
-    background-color: rgb(233, 248, 248);
+    /* background-color: rgb(233, 248, 248); */
     height: auto;
     width: 500px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     text-align: center;
     padding: 10px;
-    border-radius: 20px;
+  
+    background-image: linear-gradient(rgba(255, 251, 251, 0.9), rgba(242, 237, 237, 0.8));
+    opacity: 0.7 ;
+    margin-bottom: 100px;
 
 }
 .text-center{
    text-align: center;
    color: white;
    font-size: 50px;
+   margin-top: 0px;
 }
 .search {
     text-align: center; 
@@ -32,16 +36,43 @@ input{
   }
 .city{
     font-size: 60px;
+    margin-top: 0px;
 }
+
 .date-time{
     font-size: 30px;
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    color: white;
+    word-spacing: 5px;
 }
 .temperature{
     font-size: 50px;
     font-weight: bolder;
+    margin-top: -10px;
    
 }
 .cloud{
     font-size: 70px;
     margin-top: -20px;
+}
+.description{
+    font-size: 30px;
+    margin-top:-30px ;
+}
+.img{
+    height: 150px;
+    width: 150px;
+    margin-top: -30px;
+    filter: drop-shadow(5);
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.img2{
+    font-size: 30px;
+    margin: 10px;
 }
