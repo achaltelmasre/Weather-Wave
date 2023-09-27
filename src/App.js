@@ -4,10 +4,10 @@ import axios from 'axios';
 
 // Rest of your code
 import cloudy from "./img/cloudy.gif";
-import humidity from "./img/humidity.gif";
-import pressure from "./img/pressure.gif";
-import visibility from "./img/visibility.gif";
-import wind from "./img/wind.gif";
+import humidity from "./img/humidity.png";
+import pressure from "./img/pressure.png";
+import visibility from "./img/visibility.png";
+import wind from "./img/wind.png";
 
  import "./App.css"
 
@@ -92,8 +92,8 @@ let time = d.toLocaleTimeString([],{
                <h1 className="temperature ">{(weatherData?.main?.temp - 273).toFixed(2)} °C</h1>
    
             <div className="box">
-               <p className="img2"><img src={visibility} /> {weatherData?.visibility} meters</p>
-               <p className="img2"><img src={wind}/> {weatherData?.wind?.speed} km/h</p>
+               <span> <img src={visibility} /><p className="img2"> {weatherData?.visibility} meters</p></span>
+                 <span><img src={wind}/> <p className="img2"> {weatherData?.wind?.speed} km/h</p></span>
             </div>
             <div className="box">
                <p className="img2"><img src={humidity}/> {weatherData?.main?.humidity} F</p>
