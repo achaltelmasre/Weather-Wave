@@ -92,12 +92,12 @@ let time = d.toLocaleTimeString([],{
                <h1 className="temperature ">{(weatherData?.main?.temp - 273).toFixed(2)} °C</h1>
    
             <div className="box">
-               <span> <img src={visibility} /><p className="img2"> {weatherData?.visibility} meters</p></span>
-                 <span><img src={wind}/> <p className="img2"> {weatherData?.wind?.speed} km/h</p></span>
+               <p  className="data"> <img src={visibility} className="img2"/> {weatherData?.visibility} meters</p>
+                 <p  className="data"> <img src={wind} className="img2"/> {weatherData?.wind?.speed} km/h</p>
             </div>
             <div className="box">
-               <p className="img2"><img src={humidity}/> {weatherData?.main?.humidity} F</p>
-                <p className="img2"><img src={pressure} /> {weatherData?.main?.pressure} pa</p>
+               <p className="data"><img src={humidity} className="img2"/> {weatherData?.main?.humidity} F</p>
+                <p className="data"><img src={pressure} className="img2"/> {weatherData?.main?.pressure} pa</p>
              </div>
              <br />
 
