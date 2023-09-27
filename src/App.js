@@ -99,6 +99,7 @@ let time = d.toLocaleTimeString([],{
                <p className="img2"><img src={humidity}/> {weatherData?.main?.humidity} F</p>
                 <p className="img2"><img src={pressure} /> {weatherData?.main?.pressure} pa</p>
              </div>
+             <br />
 
         </div> 
 
